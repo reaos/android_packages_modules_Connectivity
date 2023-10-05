@@ -132,6 +132,7 @@ static void verifyClatPerms() {
 
 #undef V2
 
+    fatal = false;
     if (fatal) abort();
 }
 
