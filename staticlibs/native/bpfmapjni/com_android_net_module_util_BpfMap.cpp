@@ -140,7 +140,6 @@ static void com_android_net_module_util_BpfMap_nativeSynchronizeKernelRCU(JNIEnv
     const int pfSocket = socket(AF_KEY, SOCK_RAW | SOCK_CLOEXEC, PF_KEY_V2);
 
     if (pfSocket < 0) {
-        jniThrowErrnoException(env, "nativeSynchronizeKernelRCU:socket", errno);
         return;
     }
 
